@@ -3,7 +3,8 @@ def average_of_numbers():
     n = len(numbers)
     total = sum(numbers)
     average = total / n
-    print('average of numbers = ' + str(round(average, 5)))
+    print('sum of numbers = ' + str(total))
+    print('average of numbers = ' + str(total) + '/' + str(n) + ' = ' + str(round(average, 5)))
 
 
 def missing_numbers():
@@ -12,7 +13,8 @@ def missing_numbers():
     n = len(numbers) + 1
     total = sum(numbers)
     missing_number = (average * n) - total
-    print('missing number = ' + str(missing_number))
+    print('sum of numbers = ' + str(total) + '\nsum of total numbers = ' + str(average * n))
+    print('missing number = ' + str(average * n) + ' - ' + str(total) + ' = ' + str(missing_number))
 
 
 def sum_of_total_numbers():
@@ -22,13 +24,26 @@ def sum_of_total_numbers():
     print(("total sum of numbers = " + str(total_sum)))
 
 
+def missing_numbers_case1():
+    total_average = float(input('enter the average of total numbers = '))
+    average_numbers = float(input("enter the average of numbers = "))
+    total_numbers = int(input('total outcomes = '))
+    sum_of_numbers = average_numbers * (total_numbers - 1)
+    missing_number = total_numbers * total_average - sum_of_numbers
+    print('sum of numbers = ' + str(sum_of_numbers) + '\nsum of total numbers = ' + str(total_numbers * total_average))
+    print('missing number = ' + str(missing_number))
+
+
 given_situation = input(
-    'Enter the type of problem \na)average of numbers b)missing number c)total sum of numbers \nenter option: ').lower()
+    'Enter the type of problem \na)average of numbers b)missing number \nc)total sum of numbers d)missing number '
+    'using average \nenter option: ').lower()
 if given_situation == 'a':
     average_of_numbers()
 elif given_situation == 'b':
     missing_numbers()
 elif given_situation == 'c':
     sum_of_total_numbers()
+elif given_situation == 'd':
+    missing_numbers_case1()
 else:
     print('enter a valid input')
