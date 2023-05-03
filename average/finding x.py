@@ -5,6 +5,8 @@ total = 0
 for i in range(total_count):
     total += value * i
 x = (total_count * average - total) / total_count
-print('the numbers are: ')
+output = []
 for i in range(total_count):
-    print(str(x + (value * i)), end=' ')
+    output.append(x + (value * i))
+print('the numbers are: ', end=' ')
+print(*output)
