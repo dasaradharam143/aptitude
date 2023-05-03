@@ -5,6 +5,6 @@ total = 0
 for i in range(a):
     total += b * i
 x = (a * average - total) / a
-print('the numbers are ')
+print('the numbers are: ')
 for i in range(a):
     print(str(x + (b * i)), end=' ')
