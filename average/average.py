@@ -35,8 +35,8 @@ def missing_numbers_case1():
 
 
 given_situation = input(
-    'Enter the type of problem \na)average of numbers b)missing number \nc)total sum of numbers d)missing number '
-    'using average \nenter option: ').lower()
+    "Enter the type of problem \na)average of numbers b)missing number \nc)total sum of numbers d)missing number "
+    "using average \nenter option: ").lower()
 if given_situation == 'a':
     average_of_numbers()
 elif given_situation == 'b':
