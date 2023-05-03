@@ -6,12 +6,13 @@ def fun1():                                          # page no 267 Qno 35
     c = int(input('product of their ages = '))
     x = (c / (a * b)) ** 0.5
     print('x = ' + str(x))
-    print('man age = '+str(a * x))
-    print('son age = ' + str(b * x))
+    print(f'man age = {a}x = '+str(a * x)+' years')
+    print(f'son age = {b}x = ' + str(b * x)+' years')
     d = int(input('enter hence years = '))
     p = a * x + d
     q = b * x + d
-    print(f'ratio of their ages after {d} years = '+str(p / q))
+    print(f'ratio of their ages after {d} years = {p}/{q} = '+str(p / q))
+
 
 def fun2():                                         # page no 266 Qno 18
     a = int(input('enter ratio of a age = '))
@@ -19,18 +20,27 @@ def fun2():                                         # page no 266 Qno 18
     h = int(input('enter hence years = '))
     c = int(input('enter ratio of a age after hence years = '))
     d = int(input('enter ratio of b age after hence years = '))
-    p= (a*h*c-a*h*d)/(a*d - b*c)
-    q= (b*h*c - b*h*d)/(a*d - b*c)
-    print(p-q)
+    p = (a*h*c-a*h*d)/(a*d - b*c)
+    q = (b*h*c - b*h*d)/(a*d - b*c)
+    print(f'difference of their ages = {p} - {q} = '+str(abs(q-p))+' years')
 
 
-def fun3():
+def fun3():                                             # page no 266 Qno 21
+    a = int(input('sum of their ages a,b = '))
+    c = int(input('enter ratio of b:a = '))
+    d = int(input('enter hence years = '))
+    p = (a+d-c*d) / (c+1)
+    q = (c*d - d + a*c) / (c+1)
+    print(f'daughter age = {p} years')
+    print(f'mother age = {q} years')
 
 
-a=input('enter option 1 2 3 = ')
-if a=='1':
+A = input('enter option 1 2 3 = ')
+if A == '1':
     fun1()
-elif a=='2':
+elif A == '2':
     fun2()
-else:
+elif A == '3':
     fun3()
+else:
+    print('enter valid input')
