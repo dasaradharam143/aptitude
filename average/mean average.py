@@ -17,7 +17,7 @@ def find_missing_number():
     for i in range(len(no_of_denominations)):
         total += no_of_denominations[i] * avg_of_values[i]
     missing_number = (average * sum(no_of_denominations) - total) / no_of_denominations[index_0]
-    print('missing number = ' + str(round(missing_number, 5)))
+    print('missing number = ' + str(round(missing_number, 4)))
 
 
 condition = input('enter 1) to find mean average 2) to find missing number : ')
