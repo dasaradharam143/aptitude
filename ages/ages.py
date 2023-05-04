@@ -27,10 +27,11 @@ def fun2():                                         # page no 266 Qno 18
 
 def fun3():                                             # page no 266 Qno 21
     a = int(input('sum of their ages a,b = '))
-    c = int(input('enter ratio of b:a = '))
+    b = int(input('enter ratio of mother = '))
+    c = int(input('enter ratio of daughter = '))
     d = int(input('enter hence years = '))
-    p = (a+d-c*d) / (c+1)
-    q = (c*d - d + a*c) / (c+1)
+    p = (a+c*d-b*d) / (c+b)
+    q = (a*b - c*d + b*d) / (c+b)
     print(f'daughter age = {p} years')
     print(f'mother age = {q} years')
 
