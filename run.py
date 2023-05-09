@@ -1,4 +1,5 @@
 from subprocess import call
+from average import
 
 def option():
     condition = input('1)average.py 2)average_reciprocal.py '
