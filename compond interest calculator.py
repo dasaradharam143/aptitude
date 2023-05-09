@@ -60,14 +60,3 @@ for i in range(1, training_cost_payment_month + 1):
     else:
         x = (totalSalary + trainingCost) - totalIncome
         print(f'balanceleft {math.ceil(x)}')
-
-
-
-
-
-
-
-
-
-
-

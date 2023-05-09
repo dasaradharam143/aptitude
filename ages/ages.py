@@ -1,4 +1,4 @@
-
+from fractions import Fraction
 
 def fun1():                                          # page no 267 Qno 35
     a = int(input('enter ratio of man age = '))
@@ -12,7 +12,7 @@ def fun1():                                          # page no 267 Qno 35
     p = a * x + d
     q = b * x + d
     print(f'ratio of their ages after {d} years = {p}/{q} = '+str(p / q))
-
+    # print(Fraction(int(p),int(q)))
 
 def fun2():                                         # page no 266 Qno 18
     a = int(input('enter ratio of a age = '))
