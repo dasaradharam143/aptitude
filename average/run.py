@@ -28,7 +28,6 @@ def openpyfile():
     call(['python',option()])
     print()
     print('/////////////////////////////////////////////////////////')
-    # option()
     openpyfile()
 
 openpyfile()
