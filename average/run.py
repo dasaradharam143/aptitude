@@ -26,8 +26,9 @@ def option():
 
 def openpyfile():
     call(['python',option()])
-    print()
+    print(' ')
     print('/////////////////////////////////////////////////////////')
+    print(' ')
     openpyfile()
 
 openpyfile()
