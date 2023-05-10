@@ -21,13 +21,15 @@ def option():
         value = 'mean_average.py'
     else:
         exit()
+
+    print('/\\'*40)
     return value
 
 
 def openpyfile():
     call(['python',option()])
     print(' ')
-    print('/////////////////////////////////////////////////////////')
+    print('=='*40)
     print(' ')
     openpyfile()
 

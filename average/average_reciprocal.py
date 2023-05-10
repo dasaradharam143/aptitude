@@ -1,4 +1,4 @@
-numbers = list(map(float, input('enter the numbers = ').split()))
+numbers = list(map(float, input('enter the numbers in denominator = ').split()))
 b = []
 for i in numbers:
     b.append(round(1 / i, 5))
